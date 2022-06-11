@@ -20,3 +20,5 @@ def multiply_even_numbers(nums):
         return product
     else:
         return 1
+
+#helpful link: https://www.geeksforgeeks.org/python-multiply-numbers-list-3-different-ways/
