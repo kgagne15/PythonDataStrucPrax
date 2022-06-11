@@ -60,3 +60,6 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
             return message + ' ' + str(res)
     else:
         return None
+
+
+#helpful link: https://kodify.net/python/math/truncate-integers/
