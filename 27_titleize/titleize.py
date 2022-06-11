@@ -21,5 +21,5 @@ def titleize(phrase):
         new_word = []
     return ' '.join(total_phrase)
     
-        
+#helpful links: https://www.w3schools.com/python/ref_string_split.asp
 
