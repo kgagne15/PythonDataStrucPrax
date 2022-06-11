@@ -27,5 +27,6 @@ def read_file_list(filename):
         line = line.rstrip()
         print('- ' + line)
 
+    file.close()
 #helpful link: https://stackoverflow.com/questions/275018/how-do-i-remove-a-trailing-newline
 #did use solution for hint
