@@ -13,3 +13,18 @@ def find_the_duplicate(nums):
         >>> find_the_duplicate([2, 1, 3, 4]) is None
         True
     """
+    loop_dict = {}
+    new_lst = []
+    for num in nums:
+        loop_dict[num] = 0
+    for num in nums:
+        loop_dict[num] += 1
+
+    for num in nums:
+        if loop_dict[num] >= 2:
+            return num
+    return None
+
+    
+
+        
