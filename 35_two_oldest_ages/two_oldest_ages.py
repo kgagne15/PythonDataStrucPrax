@@ -21,3 +21,28 @@ def two_oldest_ages(ages):
     # you may find it helpful to research the `sorted(iter)` function, which
     # can take *any* type of list-like-thing, and returns a new, sorted list
     # from it.
+    greatest_lst = []
+    greatest = ages[0]
+    for age in ages:
+        if age > greatest:
+            greatest = age
+
+    greatest_lst.append(greatest)
+    idx = ages.index(greatest)
+    ages.pop(idx)
+
+    for age in ages:
+        if age == greatest_lst[0]:
+            idx = ages.index(age)
+            ages.pop(idx)
+
+    greatest = ages[0]
+    for age in ages:
+        if age > greatest:
+            greatest = age
+
+    greatest_lst.insert(0, greatest)
+    
+    return tuple(greatest_lst)
+
+    #helpful link: https://www.geeksforgeeks.org/python-convert-a-list-into-a-tuple/
