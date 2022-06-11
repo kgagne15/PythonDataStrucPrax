@@ -10,3 +10,5 @@ def compact(lst):
     
     true_list = [item for item in new_lst if bool(item) == True]
     return true_list
+
+#helpful link: https://www.w3schools.com/python/python_booleans.asp
