@@ -16,3 +16,6 @@ def sum_floats(nums):
         if isinstance(num, float) == True:
             total = total + num
     return total
+
+
+#helpful link: https://www.w3schools.com/python/ref_func_isinstance.asp
