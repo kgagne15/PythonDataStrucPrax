@@ -27,5 +27,23 @@ def is_odd_string(word):
         >>> is_odd_string('amazing')
         True
     """
+    sum = 0
+    loop_dict = {}
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+
+    for letter in alpha:
+        idx = alpha.index(letter) + 1
+        # print(letter, idx)
+        loop_dict[letter] = idx
+
+
+    for letter in word:
+        value = loop_dict[letter.lower()]
+        sum = sum + value
+
+    if sum % 2 == 0:
+        return False
+    else:
+        return True
 
     # Hint: you may find the ord() function useful here
