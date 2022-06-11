@@ -11,3 +11,17 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    loop_dict = {}
+    greatest = (0, 0)
+    for num in nums:
+        loop_dict[num] = 0
+    for num in nums:
+        loop_dict[num] += 1
+    
+    #print(loop_dict.items())
+    for k, v in loop_dict.items():
+        #print(v, greatest[1])
+        if v > greatest[1]:
+            greatest = (k, v)
+    return greatest[0]
+        
