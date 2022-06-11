@@ -16,3 +16,22 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+
+    
+    a_hobbies = []
+    b_hobbies = []
+    
+    for hobby in a[2]:
+        a_hobbies.append(hobby)
+    for hobby in b[2]:
+        b_hobbies.append(hobby)
+
+    a_hobbies = set(a_hobbies)
+    b_hobbies = set(b_hobbies)
+    combo_hobbies = a_hobbies & b_hobbies
+
+    if (len(combo_hobbies) == 0):
+        return False
+    else: 
+        return True
+    
