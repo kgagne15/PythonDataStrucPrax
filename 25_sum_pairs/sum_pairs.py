@@ -21,6 +21,7 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+    #only partially works, will discuss with mentor. solution is commented below
     total = 0
     for num in nums:
         idx = nums.index(num)
@@ -29,3 +30,18 @@ def sum_pairs(nums, goal):
             if total == goal:
                 return (num, second_num)
         return ()
+
+
+
+
+    # already_visited = set()
+
+    # for i in nums:
+    #     difference = goal - i
+
+    #     if difference in already_visited:
+    #         return (difference, i)
+
+    #     already_visited.add(i)
+
+    # return ()
